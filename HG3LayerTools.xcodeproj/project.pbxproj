@@ -10,6 +10,7 @@
 		907E53BE1B177FF0002EA6D4 /* HG3LayerTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 907E53BD1B177FF0002EA6D4 /* HG3LayerTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		907E53C41B177FF0002EA6D4 /* HG3LayerTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907E53B81B177FF0002EA6D4 /* HG3LayerTools.framework */; };
 		907E53CB1B177FF0002EA6D4 /* HG3LayerToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907E53CA1B177FF0002EA6D4 /* HG3LayerToolsTests.swift */; };
+		907E53D51B17803D002EA6D4 /* HG3LayerTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907E53D41B17803D002EA6D4 /* HG3LayerTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		907E53C31B177FF0002EA6D4 /* HG3LayerToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HG3LayerToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907E53C91B177FF0002EA6D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907E53CA1B177FF0002EA6D4 /* HG3LayerToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HG3LayerToolsTests.swift; sourceTree = "<group>"; };
+		907E53D41B17803D002EA6D4 /* HG3LayerTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HG3LayerTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				907E53BD1B177FF0002EA6D4 /* HG3LayerTools.h */,
 				907E53BB1B177FF0002EA6D4 /* Supporting Files */,
+				907E53D41B17803D002EA6D4 /* HG3LayerTools.swift */,
 			);
 			path = HG3LayerTools;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907E53D51B17803D002EA6D4 /* HG3LayerTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		907E53CF1B177FF0002EA6D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		907E53D01B177FF0002EA6D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
