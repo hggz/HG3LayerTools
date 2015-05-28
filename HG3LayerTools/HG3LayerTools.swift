@@ -8,11 +8,11 @@
 
 import Foundation
 
+public enum LayerProperties {
+    case CornerRadius, BorderColor, BorderWidth
+}
+
 public extension UIView {
-    enum LayerProperties {
-        case CornerRadius, BorderColor, BorderWidth
-    }
-    
     //MARK: Public Functions
     func setLayerProperties(layerProperties: [LayerProperties: AnyObject]) {
         if let val = layerProperties[.BorderWidth] as? CGFloat {
